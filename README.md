@@ -33,6 +33,14 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
     - Hypothesis: Plants in optimal moisture, temperature, and humidity zones show better health outcomes.
     - Validation: Boxplots and heatmaps demonstrating health distribution across zones.
 
+🌿 Hypothesis Validation Summary (Level 1 Encoding)
+
+Combined Stressor Impact:The mean Total Stress Score per stress category shows that plants under combined abiotic and biotic stress conditions had the highest average score (2.35), compared to abiotic-only (1.21) and biotic-only (1.03). This supports the hypothesis that combined stressors increase cumulative plant health risk.
+
+Differential Impact of Stress Types:Individual stress categories (abiotic-only and biotic-only) show lower mean scores compared to combined stress, with biotic-only stress having a slightly lower mean score. However, further statistical validation is recommended.
+
+Optimal Environmental Conditions:Not evaluated in Level 1 encoding. To be explored in Level 2 (zone-based encoding).
+
 ## 📅 Project Plan
 ### High-Level Steps for Analysis:
 
