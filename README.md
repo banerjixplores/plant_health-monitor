@@ -1,4 +1,4 @@
-# 🌱 Project XYZ
+# 🌱 Plant Health-Monitor
 
 **Plant Health Monitoring** is an analytical tool developed to explore, analyze, and visualize plant sensor data. It features advanced multi-level encoding to capture interactions among abiotic and biotic stressors, delivering actionable insights for optimal plant care and management.
 
@@ -197,12 +197,10 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
 ## Credits 
 
 ### Content 
-
 * Dataset from Kaggle
 * Plant physiology literature for threshold values and stress interactions
 
 ### Media
-
 - CI logo from Code Institute
 
 ## Acknowledgements (optional)
@@ -211,4 +209,4 @@ conducting this standalone project.
 * Thanks to John's interactive coding sessions on coding, and recapitulating
 the concepts through practical examples during the Data Coach sessions, and to 
 Niel's SME sessions
-* Last, but not the least, to my colleagues in this Cohort :)
+* Last, but not the least, Grateful to have such nice colleagues in this Cohort :)
