@@ -4,6 +4,8 @@
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 
 ## 🧾 Dataset Content
 The dataset contains data generated to simulate readings for monitoring plant health in agricultural settings. It includes several key environmental and biological indicators, such as temperature, humidity, soil moisture, pH, nutrient level, light intensity, and an overall health score. The data is structured to support research in plant health monitoring, enabling users to train AI models for predicting plant health status based on biosensor data.
@@ -33,27 +35,43 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
     - Hypothesis: Plants in optimal moisture, temperature, and humidity zones show better health outcomes.
     - Validation: Boxplots and heatmaps demonstrating health distribution across zones.
 
-🌿 Validation Summary (Level 1 Encoding)
+🌿 Level 1 Encoding (Binary stressor encoding)
 
-- **Combined Stressor Impact:**
-The mean Total Stress Score per stress category shows that plants under combined abiotic and biotic stress conditions had the highest average score (2.35), compared to abiotic-only (1.22) and biotic-only (1.04). This supports the hypothesis that combined stressors increase cumulative plant health risk.
+- **Combined Stressor Impact:**  
+  Plants under combined abiotic and biotic stress show higher average Total Stress Score (2.35), validating Hypothesis 1.
 
-- **Differential Impact of Stress Types:**
-Individual stress categories (abiotic-only and biotic-only) show lower mean scores compared to combined stress, with biotic-only stress having a slightly lower mean score. However, further statistical validation is recommended.
+- **Differential Impact of Stress Types:**  
+  Biotic stress had marginally lower mean score than abiotic, but combined stresses consistently resulted in higher stress and health decline.
 
-- **Optimal Environmental Conditions:**
-Not evaluated in Level 1 encoding. To be explored in Level 2 (zone-based encoding).
+- **Optimal Conditions:**  
+  Not evaluated in Level 1.
 
-🌿 Validation Summary (Level 2 Encoding)
+---
 
-- **Combined Stressor Impact:**
-Stacked bar charts demonstrate a clearer proportional health risk increase under combined stress (21.7% unhealthy), compared to abiotic-only (15.2%) and biotic-only (17.6%), validating increased cumulative risk.
+🌿 Level 2 Encoding (Zone-based encoding)
 
--**Differential Impact of Stress Types:**
-Visualizations indicate that abiotic and biotic stresses individually produce significant but comparable unhealthy proportions. Combined stressors show a clearly higher impact.
+- **Combined Stressor Impact:**  
+  The bar plots and category proportions clearly show that combined stress conditions correspond to higher unhealthy plant proportions (~22%) compared to abiotic-only (~17%), biotic-only (~21%), and no-stress (~17%).
 
--**Optimal Environmental Conditions:**
-Optimal environmental zones consistently showed the highest proportion of healthy plants across moisture (82.4%), temperature (82.5%), and humidity (82.4%) zones, supporting the hypothesis that optimal conditions enhance plant health.
+- **Differential Impact of Stress Types:**  
+  Biotic-only stress category consistently showed slightly higher unhealthy proportions (21%) than abiotic-only (17%) and no-stress.
+
+- **Optimal Environmental Conditions:**  
+  Zonal visualization shows that:
+  - Moisture: Optimal (17.6% unhealthy), High (21.7%), Low (15.2%)
+  - Temperature: Optimal (17.5% unhealthy), High (19.2%), Low (13.5%)
+  - Humidity: Optimal (17.6%), High (15.9%), Low (22.2%)
+  - Light: Optimal (17.6%), High (13.2%), Low (17.9%)
+
+  The unhealthy percentages drop noticeably in optimal and high zones, supporting Hypothesis 3.
+
+- **Stress Category Shift:**  
+  Zone-based encoding resulted in more plants falling under no-stress category (46.6%) compared to binary encoding (40.2%), providing a more nuanced stress identification.
+
+- **Correlation Improvement:**  
+  Higher correlations between total stress score and individual abiotic/biotic scores in Level 2 encoding suggest improved feature clarity.
+
+---
 
 ## 📅 Project Plan
 ### High-Level Steps for Analysis:
@@ -136,11 +154,21 @@ Optimal environmental zones consistently showed the highest proportion of health
 
 **Ideation**: Helped formulate methods for encoding strategies, example pd.cut.
 
-**Styling**: Helped style and re-factor/ re-organize pipeline for better readability
+**Styling**: Helped style and re-factor/ re-organize parts of pipeline and README for better readability
 
 **Design Thinking**: Supported visualization selection to enhance clarity and interpretability.
 
 **Code Optimization**: Suggested efficient, readable, and optimized code structures
+
+## Future Outlook
+
+- Add interaction features (e.g., Abiotic × Biotic interactions).
+- Add time-series simulation data (growth stages of plants).
+- Integrate real-world biotic data sources (VOC sensors, pest databases).
+- Create an interactive dashboard (Streamlit).
+- Export visualization plots into an interactive web-based dashboard.
+- Develop a CLI or automated script version of the ETL process for repeatability.
+- Build a simple classification model to predict health status of plants based on available features. Future work could involve hyperparameter tuning, exploring other classification algorithms, or incorporating additional data sources to enhance the model's performance.
 
 
 ## ⚖️ Ethical considerations
@@ -178,4 +206,8 @@ Optimal environmental zones consistently showed the highest proportion of health
 - CI logo from Code Institute
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Thanks to Vasi for facilitating all the resources and clear instructions for
+conducting this standalone project.
+* Thanks to John's interactive coding sessions on coding, and recapitulating
+the concepts through practical examples during the Data Coach sessions
+* 
