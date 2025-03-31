@@ -122,9 +122,9 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
 
 | Business Requirement | Chosen Visualisation | Rationale |
 |----------------------|----------------------|-----------|
-| **Understand how environmental factors influence plant health** | Matplotlib Histogram & Boxplot | Clearly displays data distribution, central tendencies, and variability, enabling easy interpretation of environmental influences on plant health. |
-| **Develop a framework to evaluate cumulative stress effects** | Seaborn Bar Plot & Plotly Sunburst | Allows for intuitive visual comparison and exploration of multiple stressors and their cumulative impact on plant health. |
-| **Provide clear, interactive visualizations for data-driven decisions** | Plotly Sunburst | Facilitates interactive and hierarchical data exploration, enabling stakeholders to make informed, data-driven decisions easily. |
+| **Understand how environmental factors influence plant health** | Matplotlib & Seaborn: Distribution plots, Boxplots, Correlation Heatmaps (Level 1 & 2) | Clearly illustrates the distribution and variability of microclimate variables and their relationship with plant health. Facilitates pre-encoding understanding and post-encoding analysis. |
+| **Develop a framework to evaluate cumulative stress effects** | Seaborn Stacked Bar Plots, Matplotlib Pie Charts (Level 1 vs 2), Total Stress Distribution, Stress Category Comparison plots | Supports visual comparison between Level 1 (binary) and Level 2 (zone-based) encoding to validate hypotheses about combined stress effects and stress score behavior. |
+| **Provide clear, interactive visualizations for data-driven decisions** | Plotly Scatter Plot, Pie charts | Enables interactive exploration of plant health in relation to encoded stress scores and categories, enhancing interpretability for data-driven decision-making. |
 
 ## 📈 Analysis techniques used
 
@@ -209,5 +209,6 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
 * Thanks to Vasi for facilitating all the resources and clear instructions for
 conducting this standalone project.
 * Thanks to John's interactive coding sessions on coding, and recapitulating
-the concepts through practical examples during the Data Coach sessions
-* 
+the concepts through practical examples during the Data Coach sessions, and to 
+Niel's SME sessions
+* Last, but not the least, to my colleagues in this Cohort :)
