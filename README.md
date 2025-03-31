@@ -33,13 +33,27 @@ The ultimate goal is to promote smart green cities, urban agriculture, and promo
     - Hypothesis: Plants in optimal moisture, temperature, and humidity zones show better health outcomes.
     - Validation: Boxplots and heatmaps demonstrating health distribution across zones.
 
-🌿 Hypothesis Validation Summary (Level 1 Encoding)
+🌿 Validation Summary (Level 1 Encoding)
 
-Combined Stressor Impact:The mean Total Stress Score per stress category shows that plants under combined abiotic and biotic stress conditions had the highest average score (2.35), compared to abiotic-only (1.21) and biotic-only (1.03). This supports the hypothesis that combined stressors increase cumulative plant health risk.
+- **Combined Stressor Impact:**
+The mean Total Stress Score per stress category shows that plants under combined abiotic and biotic stress conditions had the highest average score (2.35), compared to abiotic-only (1.22) and biotic-only (1.04). This supports the hypothesis that combined stressors increase cumulative plant health risk.
 
-Differential Impact of Stress Types:Individual stress categories (abiotic-only and biotic-only) show lower mean scores compared to combined stress, with biotic-only stress having a slightly lower mean score. However, further statistical validation is recommended.
+- **Differential Impact of Stress Types:**
+Individual stress categories (abiotic-only and biotic-only) show lower mean scores compared to combined stress, with biotic-only stress having a slightly lower mean score. However, further statistical validation is recommended.
 
-Optimal Environmental Conditions:Not evaluated in Level 1 encoding. To be explored in Level 2 (zone-based encoding).
+- **Optimal Environmental Conditions:**
+Not evaluated in Level 1 encoding. To be explored in Level 2 (zone-based encoding).
+
+🌿 Validation Summary (Level 2 Encoding)
+
+- **Combined Stressor Impact:**
+Stacked bar charts demonstrate a clearer proportional health risk increase under combined stress (21.7% unhealthy), compared to abiotic-only (15.2%) and biotic-only (17.6%), validating increased cumulative risk.
+
+-**Differential Impact of Stress Types:**
+Visualizations indicate that abiotic and biotic stresses individually produce significant but comparable unhealthy proportions. Combined stressors show a clearly higher impact.
+
+-**Optimal Environmental Conditions:**
+Optimal environmental zones consistently showed the highest proportion of healthy plants across moisture (82.4%), temperature (82.5%), and humidity (82.4%) zones, supporting the hypothesis that optimal conditions enhance plant health.
 
 ## 📅 Project Plan
 ### High-Level Steps for Analysis:
@@ -58,7 +72,6 @@ Optimal Environmental Conditions:Not evaluated in Level 1 encoding. To be explor
    - Generated new insightful features like Stress Category and Stress Fingerprint.
 
 4. **Analysis and Visualization**
-   - Performed descriptive statistical analyses to understand basic data characteristics.
    - Created visualizations (Matplotlib, Seaborn, Plotly) to validate hypotheses and clearly illustrate findings.
 
 5. **Interpretation and Reporting**
@@ -155,21 +168,14 @@ Optimal Environmental Conditions:Not evaluated in Level 1 encoding. To be explor
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+### Content 
+
 * Dataset from Kaggle
 * Plant physiology literature for threshold values and stress interactions
 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- CI logo from Code Institute
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
